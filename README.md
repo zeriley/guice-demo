@@ -1,7 +1,7 @@
 # guice-demo
 
 Agenda:
-1. Why Use Guice? (setup example with deps having lots of deps, chained and chained)
+1. Why Use Guice?
 2. @Inject and Module
 3. Providers
 4. @Named
