@@ -11,7 +11,7 @@ public class DeliveryUpdater {
   }
 
   public void update(String delivery) {
-    System.out.println("delivery is updated v[" + c.getVersion() + "]");
+    System.out.println("delivery is updated to [" + delivery + "] v[" + c.getVersion() + "]");
   }
 
 }

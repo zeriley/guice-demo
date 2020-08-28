@@ -18,7 +18,7 @@ public class Server {
   public static void main(String[] args) {
     setupRoutes();
     Processor p = routes.get("deliveryUpdate");
-    p.process("", "");
+    p.process("order# " + randomOrderNum(), "");
   }
 
   private static void setupRoutes() {
@@ -29,4 +29,7 @@ public class Server {
     routes.put("deliveryUpdate", new DeliveryUpdateProcessor(api));
   }
 
+  private static int randomOrderNum() {
+    return (int)Math.floor(Math.random() * 100000 + 100000);
+  }
 }
